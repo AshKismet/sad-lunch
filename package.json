@@ -1,0 +1,16 @@
+{
+  "name": "burnt-dad",
+  "version": "2.0.0",
+  "description": "Burnt Dad Kitchen, A Magic Sun LLC Production",
+  "private": true,
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "@supabase/supabase-js": "^2.43.0",
+    "resend": "^3.2.0",
+    "stripe": "^15.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "canvas": "^3.2.3"
+  }
+}

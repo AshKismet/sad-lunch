@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burnt Dad · 404</title>
+<meta name="description" content="Dad burned this page. Let's get you back to the kitchen.">
+<meta name="theme-color" content="#1a0800">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+:root {
+--sun: #FF8C00;
+--orange: #FF5500;
+--red: #FF2D55;
+--teal: #FF9A3C;
+--bg: #1a0800;
+--bg2: #1f0e00;
+--panel: #2a1400;
+--white: #f0f0f0;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+background: var(--bg);
+font-family: 'Press Start 2P', monospace;
+color: var(--white);
+min-height: 100vh;
+overflow-x: hidden;
+cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect x='0' y='0' width='8' height='8' fill='%23FF8C00'/%3E%3Crect x='8' y='8' width='8' height='8' fill='%23FF8C00'/%3E%3C/svg%3E") 4 4, crosshair;
+}
+body::before {
+content: ''; position: fixed; inset: 0; z-index: 1; pointer-events: none;
+background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.07) 3px, rgba(0,0,0,0.07) 4px);
+mix-blend-mode: multiply;
+}
+.stars {
+position: fixed; inset: 0; z-index: 0; pointer-events: none;
+background-image:
+radial-gradient(1px 1px at 10% 20%, #fff 0%, transparent 100%),
+radial-gradient(1px 1px at 30% 60%, #FF8C00 0%, transparent 100%),
+radial-gradient(1px 1px at 50% 10%, #fff 0%, transparent 100%),
+radial-gradient(1px 1px at 70% 40%, #FF6600 0%, transparent 100%),
+radial-gradient(1px 1px at 85% 70%, #FF8C00 0%, transparent 100%),
+radial-gradient(1px 1px at 20% 80%, #fff 0%, transparent 100%),
+radial-gradient(1px 1px at 60% 90%, #FF6600 0%, transparent 100%),
+radial-gradient(2px 2px at 90% 15%, #FF8C00 0%, transparent 100%),
+radial-gradient(1px 1px at 40% 50%, #fff 0%, transparent 100%),
+radial-gradient(1px 1px at 75% 85%, #FF6600 0%, transparent 100%);
+}
+.sun-container { position: fixed; top: -20px; right: -20px; z-index: 1; pointer-events: none; animation: sunPulse 4s ease-in-out infinite; }
+.pixel-sun { width: 120px; height: 120px; background: var(--sun); box-shadow: -8px 0 0 var(--sun), 8px 0 0 var(--sun), 0 -8px 0 var(--sun), 0 8px 0 var(--sun), -16px -8px 0 var(--sun), 16px -8px 0 var(--sun), -8px -16px 0 var(--sun), 8px -16px 0 var(--sun), 0 0 40px rgba(255,140,0,0.6); }
+@keyframes sunPulse { 0%,100%{transform:scale(1) rotate(0deg)} 50%{transform:scale(1.05) rotate(5deg)} }
+@keyframes logoFlicker { 0%,94%,100%{opacity:1} 96%{opacity:0.6} 98%{opacity:0.9} }
+@keyframes floaty { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+
+.wrap { position: relative; z-index: 2; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 20px 60px; gap: 4px; }
+
+.logo-text { font-size: clamp(14px, 3.5vw, 24px); line-height: 1.4; text-shadow: 4px 4px 0 var(--orange), 8px 8px 0 rgba(0,0,0,0.4); animation: logoFlicker 6s ease-in-out infinite; margin-bottom: 22px; }
+.logo-text .kitchen { font-size: clamp(9px,1.8vw,14px); color: #FF9A3C; text-shadow: 2px 2px 0 #CC5500; }
+
+.toast { font-size: clamp(48px, 12vw, 96px); line-height: 1; margin-bottom: 8px; animation: floaty 3s ease-in-out infinite; filter: drop-shadow(4px 4px 0 rgba(0,0,0,0.4)); }
+
+.code-404 { font-size: clamp(40px, 11vw, 88px); color: var(--sun); text-shadow: 5px 5px 0 var(--orange), 10px 10px 0 rgba(0,0,0,0.45); letter-spacing: 4px; margin-bottom: 20px; }
+
+.err-title { font-size: clamp(13px, 3vw, 20px); color: var(--red); text-shadow: 3px 3px 0 rgba(0,0,0,0.4); letter-spacing: 2px; line-height: 1.5; margin-bottom: 16px; }
+
+.err-sub { font-family: 'VT323', monospace; font-size: clamp(18px, 3vw, 22px); color: #c0a080; line-height: 1.5; max-width: 460px; margin-bottom: 34px; }
+
+.back-btn { display: inline-block; font-family: 'Press Start 2P', monospace; font-size: clamp(9px, 2vw, 12px); padding: 18px 24px; background: var(--sun); color: var(--bg); text-decoration: none; border: 4px solid var(--orange); box-shadow: 6px 6px 0 var(--orange), 10px 10px 0 rgba(0,0,0,0.4); letter-spacing: 2px; transition: all 0.1s; }
+.back-btn:hover { background: var(--orange); }
+.back-btn:active { transform: translate(4px,4px); box-shadow: 2px 2px 0 var(--orange); }
+
+.footer-note { font-family: 'VT323', monospace; font-size: 16px; color: #6a5038; letter-spacing: 2px; margin-top: 40px; }
+</style>
+</head>
+<body>
+
+<div class="stars"></div>
+<div class="sun-container"><div class="pixel-sun"></div></div>
+
+<div class="wrap">
+  <div class="logo-text"><span style="color:#FF5500;text-shadow:4px 4px 0 #CC2200,8px 8px 0 rgba(0,0,0,0.4)">BURNT</span> <span style="color:#FF8C00;text-shadow:4px 4px 0 #CC5500,8px 8px 0 rgba(0,0,0,0.4)">DAD</span><br><span class="kitchen">KITCHEN</span></div>
+
+  <div class="toast">🍞🔥</div>
+  <div class="code-404">404</div>
+  <div class="err-title">DAD BURNED THE PAGE</div>
+  <div class="err-sub">We looked everywhere — the pantry, the junk drawer, under the couch. This page is toast. Somebody left it in too long.</div>
+
+  <a class="back-btn" href="/index.html">← BACK TO THE KITCHEN</a>
+
+  <div class="footer-note">BURNT DAD · A MAGIC SUN LLC PRODUCTION</div>
+</div>
+
+</body>
+</html>

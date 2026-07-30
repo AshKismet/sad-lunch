@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burnt Dad · Privacy Policy</title>
+<meta name="description" content="Privacy policy for Burnt Dad Kitchen. What we collect, why, and what we never do with it.">
+<meta name="theme-color" content="#1a0800">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+--sun: #FF8C00;
+--orange: #FF5500;
+--red: #FF2D55;
+--green: #4CAF50;
+--teal: #FF9A3C;
+--bg: #1a0800;
+--bg2: #1f0e00;
+--panel: #2a1400;
+--white: #f0f0f0;
+--card-bg: #faf4e8;
+--ink: #2c1a0e;
+--ink-muted: #7a6450;
+--ink-accent: #CC4400;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+background: var(--bg);
+font-family: 'Press Start 2P', monospace;
+color: var(--white);
+min-height: 100vh;
+overflow-x: hidden;
+cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect x='0' y='0' width='8' height='8' fill='%23FF8C00'/%3E%3Crect x='8' y='8' width='8' height='8' fill='%23FF8C00'/%3E%3C/svg%3E") 4 4, crosshair;
+}
+body::before {
+content: ''; position: fixed; inset: 0; z-index: 1; pointer-events: none;
+background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.07) 3px, rgba(0,0,0,0.07) 4px);
+mix-blend-mode: multiply;
+}
+.stars {
+position: fixed; inset: 0; z-index: 0; pointer-events: none;
+background-image:
+radial-gradient(1px 1px at 10% 20%, #fff 0%, transparent 100%),
+radial-gradient(1px 1px at 30% 60%, #FF8C00 0%, transparent 100%),
+radial-gradient(1px 1px at 50% 10%, #fff 0%, transparent 100%),
+radial-gradient(1px 1px at 70% 40%, #FF6600 0%, transparent 100%),
+radial-gradient(1px 1px at 85% 70%, #FF8C00 0%, transparent 100%),
+radial-gradient(1px 1px at 20% 80%, #fff 0%, transparent 100%),
+radial-gradient(1px 1px at 60% 90%, #FF6600 0%, transparent 100%),
+radial-gradient(2px 2px at 90% 15%, #FF8C00 0%, transparent 100%),
+radial-gradient(1px 1px at 40% 50%, #fff 0%, transparent 100%),
+radial-gradient(1px 1px at 75% 85%, #FF6600 0%, transparent 100%);
+}
+.sun-container { position: fixed; top: -20px; right: -20px; z-index: 1; pointer-events: none; animation: sunPulse 4s ease-in-out infinite; }
+.pixel-sun { width: 120px; height: 120px; background: var(--sun); box-shadow: -8px 0 0 var(--sun), 8px 0 0 var(--sun), 0 -8px 0 var(--sun), 0 8px 0 var(--sun), -16px -8px 0 var(--sun), 16px -8px 0 var(--sun), -8px -16px 0 var(--sun), 8px -16px 0 var(--sun), 0 0 40px rgba(255,140,0,0.6); }
+@keyframes sunPulse { 0%,100%{transform:scale(1) rotate(0deg)} 50%{transform:scale(1.05) rotate(5deg)} }
+
+.app { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; padding: 20px 16px 60px; }
+
+header { text-align: center; padding: 24px 0 28px; }
+.logo-text { font-size: clamp(16px, 4vw, 28px); line-height: 1.4; text-shadow: 4px 4px 0 var(--orange), 8px 8px 0 rgba(0,0,0,0.4); }
+.logo-sub { font-family: 'VT323', monospace; font-size: 22px; color: var(--orange); margin-top: 10px; letter-spacing: 3px; }
+
+/* NOTECARD (matches recipe card look) */
+.notecard {
+background: var(--card-bg); color: var(--ink); border-radius: 3px;
+padding: 40px 44px; position: relative;
+box-shadow: 0 4px 0 #c8b898, 0 6px 0 #b8a882, 8px 14px 40px rgba(0,0,0,0.55);
+}
+.notecard::before { content: ''; position: absolute; bottom: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 0 32px 32px; border-color: transparent transparent var(--card-shadow, #c8b898) transparent; border-radius: 0 0 3px 0; }
+.notecard-tape { position: absolute; top: -13px; left: 50%; transform: translateX(-50%) rotate(-1deg); width: 120px; height: 26px; background: rgba(255,235,160,0.7); border: 1px solid rgba(210,185,110,0.5); border-radius: 2px; }
+
+.pv-title { font-family: 'Press Start 2P', monospace; font-size: 13px; color: var(--ink-accent); letter-spacing: 1px; }
+.pv-sub { font-family: 'VT323', monospace; font-size: 18px; color: var(--ink-muted); margin-top: 8px; }
+.pv-divider { height: 2px; background: repeating-linear-gradient(90deg, var(--ink-muted) 0, var(--ink-muted) 6px, transparent 6px, transparent 12px); margin: 20px 0 8px; opacity: 0.5; }
+
+.pv-section { margin-top: 26px; }
+.pv-h { font-family: 'Press Start 2P', monospace; font-size: 9px; color: var(--ink-accent); letter-spacing: 1px; display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.pv-h .num { background: var(--ink-accent); color: var(--card-bg); padding: 4px 6px; }
+.pv-body { font-family: 'Lora', serif; font-size: 16px; line-height: 1.7; color: var(--ink); }
+.pv-body strong { color: var(--ink-accent); }
+.pv-body a { color: var(--ink-accent); text-decoration: underline; }
+.pv-list { font-family: 'Lora', serif; font-size: 16px; line-height: 1.7; margin: 10px 0 0 20px; }
+.pv-list li { margin-bottom: 6px; }
+
+.pv-callout { margin-top: 14px; border-left: 4px solid var(--ink-green, #2d5a1b); background: rgba(45,90,27,0.08); padding: 12px 16px; font-family: 'Lora', serif; font-size: 16px; line-height: 1.6; }
+.pv-callout strong { color: var(--ink-green, #2d5a1b); }
+
+.pv-footer-note { font-family: 'VT323', monospace; font-size: 17px; color: var(--ink-muted); margin-top: 30px; text-align: center; letter-spacing: 1px; }
+
+.back-link { display: inline-block; margin: 26px auto 0; font-family: 'Press Start 2P', monospace; font-size: 8px; padding: 12px 16px; border: 2px solid var(--sun); color: var(--sun); text-decoration: none; }
+.back-link:hover { background: var(--sun); color: var(--bg); }
+.back-wrap { text-align: center; }
+
+footer { text-align: center; padding: 30px 20px; font-size: 7px; color: #3a5070; letter-spacing: 2px; line-height: 2.2; }
+footer span { color: var(--sun); }
+footer a { color: #406080; text-decoration: none; }
+footer a:hover { color: var(--teal); }
+
+@media (max-width: 560px) {
+.notecard { padding: 32px 22px; }
+.pv-body, .pv-list, .pv-callout { font-size: 15px; }
+}
+</style>
+</head>
+<body>
+
+<div class="stars"></div>
+<div class="sun-container"><div class="pixel-sun"></div></div>
+
+<div class="app">
+
+  <header>
+    <div class="logo-text"><span style="color:#FF5500;text-shadow:4px 4px 0 #CC2200,8px 8px 0 rgba(0,0,0,0.4)">BURNT</span> <span style="color:#FF8C00;text-shadow:4px 4px 0 #CC5500,8px 8px 0 rgba(0,0,0,0.4)">DAD</span><br><span style="font-size:clamp(10px,2vw,16px);color:#FF9A3C;text-shadow:2px 2px 0 #CC5500">KITCHEN</span></div>
+    <div class="logo-sub">[ THE FINE PRINT ]</div>
+  </header>
+
+  <div class="notecard">
+    <div class="notecard-tape"></div>
+
+    <div class="pv-title">PRIVACY POLICY</div>
+    <div class="pv-sub">Short version: we keep the lights on, we don't sell you out.</div>
+    <div class="pv-divider"></div>
+    <div class="pv-body" style="margin-top:6px;">This is the privacy policy for <strong>Burnt Dad Kitchen</strong> (burntdad.com), operated by <strong>Magic Sun LLC</strong>. It explains what we collect, why, and what we will never do with it. Plain English, no lawyer soup.</div>
+
+    <div class="pv-section">
+      <div class="pv-h"><span class="num">1</span> EMAIL &amp; MAGIC LINKS</div>
+      <div class="pv-body">When you save your tokens, we ask for your email address and send you a <strong>magic link</strong> to sign in — no passwords, ever. We use your email only to:</div>
+      <ul class="pv-list">
+        <li>Send the login link you requested.</li>
+        <li>Tie your token balance to your account so it follows you between devices.</li>
+        <li>Send you the occasional important account or purchase message.</li>
+      </ul>
+    </div>
+
+    <div class="pv-section">
+      <div class="pv-h"><span class="num">2</span> TOKEN PURCHASES (STRIPE)</div>
+      <div class="pv-body">Recipe tokens are bought through <strong>Stripe</strong>, our payment processor. Stripe handles your card details directly — <strong>we never see or store your full card number</strong>. We keep a record that a purchase happened (amount, date, and your token balance) so we can honor what you paid for. Stripe's own handling of your payment data is covered by <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe's privacy policy</a>.</div>
+    </div>
+
+    <div class="pv-section">
+      <div class="pv-h"><span class="num">3</span> AMAZON AFFILIATE LINKS</div>
+      <div class="pv-body">Some ingredient links point to <strong>Amazon</strong>. As an Amazon Associate, Magic Sun LLC may earn a small commission from qualifying purchases — at no extra cost to you. When you click one of these links, Amazon may set its own cookies and collect information under <a href="https://www.amazon.com/privacy" target="_blank" rel="noopener">Amazon's privacy policy</a>. We don't receive your Amazon order details or personal shopping data.</div>
+    </div>
+
+    <div class="pv-section">
+      <div class="pv-h"><span class="num">4</span> WE DON'T SELL YOUR DATA</div>
+      <div class="pv-callout"><strong>We do not sell, rent, or trade your personal information — full stop.</strong> We share data only with the trusted services that make Burnt Dad work (like Stripe for payments and our email provider for magic links), and only as much as they need to do their job.</div>
+    </div>
+
+    <div class="pv-section">
+      <div class="pv-h"><span class="num">5</span> YOUR CHOICES</div>
+      <div class="pv-body">Want your account and data deleted? Email us and we'll take care of it. You can stop using magic links at any time, and unsubscribe from non-essential email whenever you like.</div>
+    </div>
+
+    <div class="pv-section">
+      <div class="pv-h"><span class="num">6</span> CONTACT</div>
+      <div class="pv-body">Questions about your privacy? Reach out to <strong>Magic Sun LLC</strong> through <a href="https://burntdad.com" target="_blank" rel="noopener">burntdad.com</a>. If we make material changes to this policy, we'll post the update here.</div>
+    </div>
+
+    <div class="pv-footer-note">Made with burnt toast &amp; good intentions.<br>Written for dads. Tested by kids. Survived by both.</div>
+  </div>
+
+  <div class="back-wrap">
+    <a class="back-link" href="/index.html">&lt; BACK TO THE KITCHEN</a>
+  </div>
+
+</div>
+
+<footer>
+  <span>BURNT DAD</span> · A Magic Sun LLC Production · <a href="https://burntdad.com">burntdad.com</a>
+</footer>
+
+</body>
+</html>
