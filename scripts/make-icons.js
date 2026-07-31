@@ -1,4 +1,4 @@
-// Generates Burnt Dad PWA icons (icon-192.png, icon-512.png) by rendering the
+// Generates Sad Lunch PWA icons (icon-192.png, icon-512.png) by rendering the
 // site's Bella + Maxi pixel-art characters onto an orange (#FF8C00) background.
 //
 //   node scripts/make-icons.js

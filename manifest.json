@@ -1,7 +1,7 @@
 {
-  "name": "Burnt Dad Kitchen",
-  "short_name": "Burnt Dad",
-  "description": "AI recipe generator for dads cooking with kids. What are we making?",
+  "name": "Sad Lunch",
+  "short_name": "Sad Lunch",
+  "description": "AI recipe generator for Sad Lunch ideas. What are we serving?",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#1a0800",

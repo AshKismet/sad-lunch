@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="impact-site-verification" value="0d25129d-a76d-418e-9427-2f8ca3d52bca">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Burnt Dad Kitchen</title>
-<meta name="description" content="AI recipe generator for dads cooking with kids. What are we making?">
+<title>Sad Lunch</title>
+<meta name="description" content="AI recipe generator for Sad Lunch ideas. What are we serving?">
 <meta name="theme-color" content="#1a0800">
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" href="/icon-192.png">
@@ -361,7 +361,7 @@ footer a:hover { color:var(--teal); }
 </div>
 
 <header>
-  <div class="logo-text"><span style="color:#FF5500;text-shadow:4px 4px 0 #CC2200,8px 8px 0 rgba(0,0,0,0.4)">BURNT</span> <span style="color:#FF8C00;text-shadow:4px 4px 0 #CC5500,8px 8px 0 rgba(0,0,0,0.4)">DAD</span><br><span style="font-size:clamp(10px,2vw,16px);color:#FF9A3C;text-shadow:2px 2px 0 #CC5500">KITCHEN</span></div>
+  <div class="logo-text"><span style="color:#FF5500;text-shadow:4px 4px 0 #CC2200,8px 8px 0 rgba(0,0,0,0.4)">SAD</span> <span style="color:#FF8C00;text-shadow:4px 4px 0 #CC5500,8px 8px 0 rgba(0,0,0,0.4)">LUNCH</span><br><span style="font-size:clamp(10px,2vw,16px);color:#FF9A3C;text-shadow:2px 2px 0 #CC5500">KITCHEN</span></div>
   <div class="logo-sub">[ WHAT ARE WE MAKING? ]</div>
 </header>
 
@@ -405,8 +405,8 @@ footer a:hover { color:var(--teal); }
 <div id="output"></div>
 
 <div class="book-cta" id="bookCta" style="display:none">
-  <div class="book-cta-title">🔥 BURNT DAD COOKBOOKS 🔥</div>
-  <div class="book-cta-text">Nailed it? This recipe might be in the upcoming Burnt Dad cookbook series. Written for dads. Tested by kids. Survived by both.</div>
+  <div class="book-cta-title">🔥 SAD LUNCH COOKBOOKS 🔥</div>
+  <div class="book-cta-text">Nailed it? This recipe might be in the upcoming Sad Lunch cookbook series. Written for dads. Tested by kids. Survived by both.</div>
   <button class="cook-btn" style="max-width:340px;margin:0 auto;display:block;font-size:9px;padding:14px" onclick="alert('Cookbook waitlist coming soon!')">JOIN THE COOKBOOK WAITLIST</button>
 </div>
 
@@ -447,7 +447,7 @@ footer a:hover { color:var(--teal); }
       </svg>
     </div>
     <div class="mv-sub">Wear the shame. Share the chaos.</div>
-    <div style="margin-bottom:24px"><a class="mv-seeall" href="https://burntdad.printful.me" target="_blank" rel="noopener">SEE ALL MERCH →</a></div>
+    <div style="margin-bottom:24px"><a class="mv-seeall" href="https://burntdad.printful.me" target="_blank" rel="noopener">SEE ALL SAD LUNCH MERCH →</a></div>
     <div class="mv-grid" id="mvGrid"></div>
     <div style="margin-top:22px;font-family:'VT323',monospace;font-size:16px;color:#806040;line-height:1.8">
       Ships when we stop burning things long enough to fulfill orders.
@@ -458,7 +458,7 @@ footer a:hover { color:var(--teal); }
 <!-- COOKBOOK WAITLIST -->
 <div id="waitlist" style="margin-top:24px">
   <div class="pixel-box waitlist">
-    <div class="wl-title"><span class="wl-utensil">🥄</span> THE BURNT DAD COOKBOOK IS COMING <span class="wl-utensil">🥄</span></div>
+    <div class="wl-title"><span class="wl-utensil">🥄</span> THE SAD LUNCH COOKBOOK IS COMING <span class="wl-utensil">🥄</span></div>
     <div class="wl-sub">Real recipes. Zero judgment.<br>Written for dads. Tested by kids. Survived by both.</div>
     <div class="wl-form" id="waitlistForm">
       <input class="wl-input" id="waitlistEmail" type="email" placeholder="your@email.com" autocomplete="email" onkeydown="if(event.key==='Enter')joinWaitlist()">
@@ -469,7 +469,7 @@ footer a:hover { color:var(--teal); }
 </div>
 
 <footer>
-  <div>© 2026 <span>BURNT DAD</span> · A <span>MAGIC SUN LLC</span> PRODUCTION</div>
+  <div>© 2026 <span>SAD LUNCH</span> · A <span>MAGIC SUN LLC</span> PRODUCTION</div>
   <div>BOOKS · PUBLISHING · FILMS · TELEVISION</div>
   <div style="margin-top:6px;font-size:6px">ALWAYS COOK WITH A GROWN-UP NEARBY ♥ · NO DADS WERE SERIOUSLY HARMED</div>
   <div style="margin-top:8px"><a href="/privacy.html">PRIVACY POLICY</a> · <a href="/terms.html">TERMS OF SERVICE</a></div>
@@ -500,7 +500,7 @@ footer a:hover { color:var(--teal); }
   <div class="login-modal">
     <div class="login-title">SAVE YOUR TOKENS</div>
     <div class="login-text">Enter your email and we'll send a magic link. No password. No nonsense. Your token balance follows you.</div>
-    <input class="login-input" id="loginEmail" type="email" placeholder="dad@burnt.com">
+    <input class="login-input" id="loginEmail" type="email" placeholder="hello@sadlunch.com">
     <button class="login-btn" onclick="sendMagicLink()">SEND MAGIC LINK</button>
     <div class="login-sent" id="loginSent">CHECK YOUR EMAIL. LINK EXPIRES IN 15 MINUTES.</div>
     <br>
@@ -786,7 +786,7 @@ function groceryOrderNow() {
   });
 }
 // Open a clean, chrome-free printable document: each saved recipe's title,
-// full ingredients, and all cooking steps, plus a Burnt Dad footer.
+// full ingredients, and all cooking steps, plus a Sad Lunch footer.
 function printRecipeBox() {
   if (!dadVan.length) return;
   const esc = s => String(s == null ? '' : s).replace(/[&<>]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;' }[c]));
@@ -803,7 +803,7 @@ function printRecipeBox() {
         ${steps ? `<h3>Steps</h3><ol class="steps">${steps}</ol>` : ''}
       </section>`;
   }).join('');
-  const doc = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Burnt Dad Recipes</title>
+  const doc = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>Sad Lunch Recipes</title>
     <style>
       *{box-sizing:border-box;} body{font-family:Georgia,'Times New Roman',serif;color:#2c1a0e;max-width:680px;margin:0 auto;padding:40px 32px;line-height:1.5;}
       h1{font-family:Arial,Helvetica,sans-serif;color:#FF5500;font-size:26px;margin:0 0 4px;}
@@ -816,10 +816,10 @@ function printRecipeBox() {
       @media print{body{padding:0;}}
     </style></head>
     <body>
-      <h1>🔥 Burnt Dad Kitchen</h1>
+      <h1>🔥 Sad Lunch</h1>
       <div class="tagline">Written for dads. Tested by kids. Survived by both.</div>
       ${sections}
-      <footer>Burnt Dad · A Magic Sun LLC Production · burntdad.com</footer>
+      <footer>Sad Lunch · A Magic Sun LLC Production · sadlunch.com</footer>
     </body></html>`;
   const win = window.open('', '_blank');
   if (!win) return;
@@ -987,7 +987,7 @@ function renderRecipe(r) {
           <div class="nc-tip-text">${r.fun_tip}</div>
         </div>
         ${r.cookbook_teaser ? `<div class="nc-teaser">📚 ${r.cookbook_teaser}</div>` : ''}
-        <div class="nc-footer">Burnt Dad · A Magic Sun LLC Production · burntdad.com</div>
+        <div class="nc-footer">Sad Lunch · A Magic Sun LLC Production · sadlunch.com</div>
       </div>
     </div>`;
 }
@@ -1100,7 +1100,7 @@ const MERCH_PLACEHOLDER = 'data:image/svg+xml,' + encodeURIComponent(
   "<rect width='120' height='120' fill='#1a0800'/>" +
   "<rect x='26' y='36' width='68' height='50' fill='none' stroke='#FF8C00' stroke-width='3'/>" +
   "<path d='M26 52 h68 M60 36 v50' stroke='#FF8C00' stroke-width='3'/>" +
-  "<text x='60' y='108' font-family='monospace' font-size='11' fill='#FF8C00' text-anchor='middle'>BURNT DAD</text>" +
+  "<text x='60' y='108' font-family='monospace' font-size='11' fill='#FF8C00' text-anchor='middle'>SAD LUNCH</text>" +
   "</svg>"
 );
 
@@ -1284,9 +1284,9 @@ window.addEventListener('load', () => {
 // DEMO RECIPES
 // ══════════════════════════════════════════════════════════════════
 const DEMO_RECIPES = [
-{name:"Bella's Rainbow Fruit Skewers",description:"Colorful, healthy, and totally no-cook! These fruit skewers are as fun to make as they are to eat.",difficulty:"easy",time_minutes:15,servings:4,allergen_warnings:"",ingredients:[{amount:"1 cup",item:"strawberries, hulled"},{amount:"1 cup",item:"green grapes"},{amount:"1 cup",item:"pineapple chunks"},{amount:"1 cup",item:"blueberries"},{amount:"1 cup",item:"mandarin orange segments"},{amount:"8",item:"wooden skewer sticks"},{amount:"half cup",item:"vanilla yogurt for dipping"}],steps:[{instruction:"Wash all your fruit thoroughly under cool running water and pat dry with paper towels.",timer_seconds:0},{instruction:"Ask a grown-up to help hull the strawberries and cut the pineapple into bite-sized chunks.",timer_seconds:0},{instruction:"Thread the fruit onto each skewer in rainbow color order: strawberry, orange, pineapple, grape, blueberry.",timer_seconds:0},{instruction:"Arrange your skewers on a plate and serve with vanilla yogurt on the side for dipping.",timer_seconds:0}],fun_tip:"Bella told me this trick. I don't know how she knows about cooking but here we are.",cookbook_teaser:"This recipe appears in Chapter 1 of the Burnt Dad Cookbook: Things Even I Can't Mess Up!"},
-{name:"Maxi's Cheesy Quesadillas",description:"Crispy, melty, and ready in minutes. Maxi's favourite after a big run in the park.",difficulty:"easy",time_minutes:20,servings:4,allergen_warnings:"Contains: dairy, gluten",ingredients:[{amount:"4",item:"large flour tortillas"},{amount:"2 cups",item:"shredded cheddar cheese"},{amount:"half cup",item:"canned black beans, rinsed"},{amount:"half cup",item:"frozen corn, thawed"},{amount:"quarter cup",item:"mild salsa"},{amount:"2 tbsp",item:"butter"},{amount:"half cup",item:"sour cream to serve"}],steps:[{instruction:"Mix the black beans, corn, and a spoonful of salsa together in a small bowl.",timer_seconds:0},{instruction:"Sprinkle cheese over one half of a tortilla. Add bean mixture. Fold the tortilla in half.",timer_seconds:0},{instruction:"Ask a grown-up to melt butter in a pan over medium heat. Place quesadilla in the pan.",timer_seconds:0},{instruction:"Cook for 3 minutes until the bottom is golden. Flip and cook 2 to 3 more minutes.",timer_seconds:180},{instruction:"Let cool for 1 minute then cut into triangles. Serve with sour cream and salsa.",timer_seconds:60}],fun_tip:"Maxi tried to eat one before it was done. Don't be like Maxi. Let it cool first.",cookbook_teaser:"From the Burnt Dad Cookbook Vol. 2: We Ate It and Nobody Called 911!"},
-{name:"Maxi's Monster Smoothie",description:"Green, thick, and packed with secret vegetables that taste like a tropical holiday. Even Maxi couldn't tell there was spinach in it.",difficulty:"easy",time_minutes:10,servings:2,allergen_warnings:"",ingredients:[{amount:"2 cups",item:"fresh spinach"},{amount:"1",item:"ripe banana, frozen"},{amount:"1 cup",item:"mango chunks"},{amount:"half cup",item:"pineapple chunks"},{amount:"1 cup",item:"coconut milk or orange juice"},{amount:"1 tbsp",item:"honey"},{amount:"handful",item:"ice cubes"}],steps:[{instruction:"Add spinach and coconut milk to blender first. Blend until fully smooth.",timer_seconds:30},{instruction:"Add frozen banana, mango, and pineapple. Put the lid on tightly.",timer_seconds:0},{instruction:"Blend on high for 45 to 60 seconds until completely smooth.",timer_seconds:60},{instruction:"Taste it. Add honey if you want it sweeter then blend 5 more seconds.",timer_seconds:0},{instruction:"Pour into glasses and serve with a fun straw. Tell the kids it's a monster smoothie.",timer_seconds:0}],fun_tip:"Tell the kids it's a monster smoothie and they'll never ask what's in it. Works every time.",cookbook_teaser:"From Burnt Dad's Drinks Chapter: Liquids I Have Not Yet Spilled On the Ceiling!"}
+{name:"Bella's Rainbow Fruit Skewers",description:"Colorful, healthy, and totally no-cook! These fruit skewers are as fun to make as they are to eat.",difficulty:"easy",time_minutes:15,servings:4,allergen_warnings:"",ingredients:[{amount:"1 cup",item:"strawberries, hulled"},{amount:"1 cup",item:"green grapes"},{amount:"1 cup",item:"pineapple chunks"},{amount:"1 cup",item:"blueberries"},{amount:"1 cup",item:"mandarin orange segments"},{amount:"8",item:"wooden skewer sticks"},{amount:"half cup",item:"vanilla yogurt for dipping"}],steps:[{instruction:"Wash all your fruit thoroughly under cool running water and pat dry with paper towels.",timer_seconds:0},{instruction:"Ask a grown-up to help hull the strawberries and cut the pineapple into bite-sized chunks.",timer_seconds:0},{instruction:"Thread the fruit onto each skewer in rainbow color order: strawberry, orange, pineapple, grape, blueberry.",timer_seconds:0},{instruction:"Arrange your skewers on a plate and serve with vanilla yogurt on the side for dipping.",timer_seconds:0}],fun_tip:"Bella told me this trick. I don't know how she knows about cooking but here we are.",cookbook_teaser:"This recipe appears in Chapter 1 of the Sad Lunch Cookbook: Things Even I Can't Mess Up!"},
+{name:"Maxi's Cheesy Quesadillas",description:"Crispy, melty, and ready in minutes. Maxi's favourite after a big run in the park.",difficulty:"easy",time_minutes:20,servings:4,allergen_warnings:"Contains: dairy, gluten",ingredients:[{amount:"4",item:"large flour tortillas"},{amount:"2 cups",item:"shredded cheddar cheese"},{amount:"half cup",item:"canned black beans, rinsed"},{amount:"half cup",item:"frozen corn, thawed"},{amount:"quarter cup",item:"mild salsa"},{amount:"2 tbsp",item:"butter"},{amount:"half cup",item:"sour cream to serve"}],steps:[{instruction:"Mix the black beans, corn, and a spoonful of salsa together in a small bowl.",timer_seconds:0},{instruction:"Sprinkle cheese over one half of a tortilla. Add bean mixture. Fold the tortilla in half.",timer_seconds:0},{instruction:"Ask a grown-up to melt butter in a pan over medium heat. Place quesadilla in the pan.",timer_seconds:0},{instruction:"Cook for 3 minutes until the bottom is golden. Flip and cook 2 to 3 more minutes.",timer_seconds:180},{instruction:"Let cool for 1 minute then cut into triangles. Serve with sour cream and salsa.",timer_seconds:60}],fun_tip:"Maxi tried to eat one before it was done. Don't be like Maxi. Let it cool first.",cookbook_teaser:"From the Sad Lunch Cookbook Vol. 2: We Ate It and Nobody Called 911!"},
+{name:"Maxi's Monster Smoothie",description:"Green, thick, and packed with secret vegetables that taste like a tropical holiday. Even Maxi couldn't tell there was spinach in it.",difficulty:"easy",time_minutes:10,servings:2,allergen_warnings:"",ingredients:[{amount:"2 cups",item:"fresh spinach"},{amount:"1",item:"ripe banana, frozen"},{amount:"1 cup",item:"mango chunks"},{amount:"half cup",item:"pineapple chunks"},{amount:"1 cup",item:"coconut milk or orange juice"},{amount:"1 tbsp",item:"honey"},{amount:"handful",item:"ice cubes"}],steps:[{instruction:"Add spinach and coconut milk to blender first. Blend until fully smooth.",timer_seconds:30},{instruction:"Add frozen banana, mango, and pineapple. Put the lid on tightly.",timer_seconds:0},{instruction:"Blend on high for 45 to 60 seconds until completely smooth.",timer_seconds:60},{instruction:"Taste it. Add honey if you want it sweeter then blend 5 more seconds.",timer_seconds:0},{instruction:"Pour into glasses and serve with a fun straw. Tell the kids it's a monster smoothie.",timer_seconds:0}],fun_tip:"Tell the kids it's a monster smoothie and they'll never ask what's in it. Works every time.",cookbook_teaser:"From Sad Lunch's Drinks Chapter: Liquids I Have Not Yet Spilled On the Ceiling!"}
 ];
 </script>
 </body>

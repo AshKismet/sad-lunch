@@ -1,4 +1,4 @@
-// Magic-link authentication for Burnt Dad Kitchen.
+// Magic-link authentication for Sad Lunch.
 //
 //   POST /api/auth   { email }            -> generates a one-time token, stores it,
 //                                            emails a magic link via Resend.
@@ -24,8 +24,8 @@ const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SER
 });
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const SITE_URL = process.env.SITE_URL || 'https://burntdad.com';
-const FROM = process.env.MAGIC_LINK_FROM || 'Burnt Dad <login@burntdad.com>';
+const SITE_URL = process.env.SITE_URL || 'https://sadlunch.com';
+const FROM = process.env.MAGIC_LINK_FROM || 'Sad Lunch <login@sadlunch.com>';
 const TOKEN_TTL_MS = 15 * 60 * 1000;   // magic links expire after 15 minutes
 const NEW_USER_TOKENS = 10;
 
@@ -60,13 +60,13 @@ function redirect(res, location) {
 function magicLinkEmail(link) {
   return `
     <div style="font-family:Arial,Helvetica,sans-serif;max-width:480px;margin:0 auto;padding:24px;color:#2c1a0e;">
-      <h1 style="color:#FF5500;font-size:22px;margin:0 0 8px;">🔥 Burnt Dad Kitchen</h1>
+      <h1 style="color:#FF5500;font-size:22px;margin:0 0 8px;">🔥 Sad Lunch</h1>
       <p style="font-size:16px;line-height:1.6;">Tap the button below to sign in. No password, no nonsense — your token balance follows you.</p>
       <p style="margin:28px 0;">
-        <a href="${link}" style="background:#FF5500;color:#fff;text-decoration:none;font-weight:bold;padding:14px 22px;border-radius:4px;display:inline-block;">Sign in to Burnt Dad</a>
+        <a href="${link}" style="background:#FF5500;color:#fff;text-decoration:none;font-weight:bold;padding:14px 22px;border-radius:4px;display:inline-block;">Sign in to Sad Lunch</a>
       </p>
       <p style="font-size:13px;color:#7a6450;line-height:1.6;">This link expires in 15 minutes and can be used once. If you didn't request it, you can safely ignore this email.</p>
-      <p style="font-size:12px;color:#7a6450;margin-top:24px;">A Magic Sun LLC Production · burntdad.com</p>
+      <p style="font-size:12px;color:#7a6450;margin-top:24px;">A Magic Sun LLC Production · sadlunch.com</p>
     </div>`;
 }
 
@@ -136,7 +136,7 @@ module.exports = async (req, res) => {
       await resend.emails.send({
         from: FROM,
         to: email,
-        subject: 'Your Burnt Dad magic link 🔥',
+        subject: 'Your Sad Lunch magic link 🔥',
         html: magicLinkEmail(link)
       });
     } catch (err) {

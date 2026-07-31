@@ -1,4 +1,4 @@
-// Adds an email to the Burnt Dad cookbook waitlist (Mailchimp audience).
+// Adds an email to the Sad Lunch cookbook waitlist (Mailchimp audience).
 //
 //   POST /api/waitlist  { email }  ->  { ok: true }
 //
@@ -8,10 +8,10 @@ const crypto = require('crypto');
 
 const LIST_ID = 'ca8ad32200';
 const MAILCHIMP_URL = `https://us9.api.mailchimp.com/3.0/lists/${LIST_ID}/members`;
-const SIGNUP_TAG = 'Burnt Dad';
+const SIGNUP_TAG = 'Sad Lunch';
 
 module.exports = async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://burntdad.com');
+  res.setHeader('Access-Control-Allow-Origin', 'https://sadlunch.com');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 

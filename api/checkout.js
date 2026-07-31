@@ -21,7 +21,7 @@ function getRawBody(req) {
 }
 
 module.exports = async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://burntdad.com');
+  res.setHeader('Access-Control-Allow-Origin', 'https://sadlunch.com');
 
   if (req.method === 'POST' && req.query.webhook === 'true') {
     const sig = req.headers['stripe-signature'];
@@ -61,7 +61,7 @@ module.exports = async (req, res) => {
           price_data: {
             currency: 'usd',
             product_data: {
-              name: 'Burnt Dad',
+              name: 'Sad Lunch',
               description: '100 Immediate and Incredible Recipes. Feed the dad.',
             },
             unit_amount: PRICE_CENTS
@@ -70,8 +70,8 @@ module.exports = async (req, res) => {
         }],
     mode: 'payment',
     customer_email: email || undefined,
-    success_url: `https://burntdad.com/?purchase=success&email=${encodeURIComponent(email || '')}`,
-    cancel_url: 'https://burntdad.com/?purchase=cancelled',
+    success_url: `https://sadlunch.com/?purchase=success&email=${encodeURIComponent(email || '')}`,
+    cancel_url: 'https://sadlunch.com/?purchase=cancelled',
     metadata: { email: email || '' }
       });
       return res.redirect(303, session.url);

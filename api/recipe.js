@@ -62,7 +62,7 @@ function looksLikeInjection(text) {
 }
 
 module.exports = async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://burntdad.com');
+  res.setHeader('Access-Control-Allow-Origin', 'https://sadlunch.com');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
@@ -123,7 +123,7 @@ module.exports = async (req, res) => {
 
   // ── Build the trusted prompt server-side ───────────────────────────
   const allergyNote = allergies.length ? `Must be: ${allergies.join(', ')}.` : '';
-  const prompt = `You are Burnt Dad Kitchen, a fun cooking app for kids and dads of all kinds.
+  const prompt = `You are Sad Lunch, a fun cooking app for kids and dads of all kinds.
 Generate a ${difficulty} difficulty recipe for: "${meal}". Servings: ${servings}. ${allergyNote}
 Respond ONLY with valid JSON, no markdown:
 {"name":"","description":"","difficulty":"${difficulty}","time_minutes":0,"servings":${servings},"allergen_warnings":"","ingredients":[{"amount":"","item":""}],"steps":[{"instruction":"","timer_seconds":0}],"fun_tip":"","cookbook_teaser":""}

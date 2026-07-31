@@ -1,4 +1,4 @@
-// Fetches products from the Burnt Dad Printful store.
+// Fetches products from the Sad Lunch Printful store.
 //
 //   GET /api/products  ->  { products: [ ...sync products... ] }
 //
@@ -7,7 +7,7 @@
 const PRINTFUL_STORE_ID = '17955542';
 
 module.exports = async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://burntdad.com');
+  res.setHeader('Access-Control-Allow-Origin', 'https://sadlunch.com');
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
